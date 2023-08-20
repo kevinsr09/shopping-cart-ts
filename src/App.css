@@ -1,0 +1,39 @@
+.root-app{
+  max-width: 1200px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+
+.content ul{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 3rem 3rem;
+}
+
+.item{
+  transition: transform .15s ease-in-out;
+}
+
+.item:hover{
+
+  transform: scale(1.05);
+
+}
+
+.cart{
+  border: 1px solid black;
+  position: fixed;
+  width: 300px;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, .7);
+  transition: right .1s ease-in-out;
+  overflow-y: scroll;
+}
+
+.cart-active{
+  right: -350px;
+}
+
